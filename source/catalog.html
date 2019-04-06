@@ -11,7 +11,7 @@
 
   <header class="page-header">
     <a class="page-header__logo main-logo" href="#">
-      <img class="main-logo__image" src="#" alt="Logo-image" width="86" height="35">
+      <img class="main-logo__image" src="index.html" alt="Store-logo" width="86" height="35">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"></button>
@@ -56,48 +56,54 @@
       <h1 class="preview__title">Каталог товаров</h1>
     </div>
 
-    <div class="catalog-wrapper">
-      <section class="product-card">
-        <img class="product-card__image" src="#" alt="">
+    <ul class="catalog-wrapper">
+      <li class="product-card">
+        <a class="product-card__link" href="#">
+          <img class="product-card__image" src="#" alt="Product-1">
+        </a>
         <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
         <p class="product-card_description">Рост 30 см, вес 200 г</p>
         <div class="product-card__price-wrapper">
           <p class="product-card__price">1 200 руб.</p>
-          <img class="product-card__cart" src="#" alt="">
+          <div class="product-card__cart"></div>
         </div>
-      </section>
-      <section class="product-card">
-        <img class="product-card__image" src="#" alt="">
+      </li>
+      <li class="product-card">
+        <a class="product-card__link" href="#">
+          <img class="product-card__image" src="#" alt="Product-2">
+        </a>
         <h2 class="product-card__title">Корзинка для белья</h2>
         <p class="product-card_description">Диаметр 15 см, высота 10 см</p>
         <div class="product-card__price-wrapper">
           <p class="product-card__price">690 руб.</p>
-          <img class="product-card__cart" src="#" alt="">
+          <div class="product-card__cart"></div>
         </div>
-      </section>
-      <section class="product-card">
-        <img class="product-card__image" src="#" alt="">
+      </li>
+      <li class="product-card">
+        <a class="product-card__link" href="#">
+          <img class="product-card__image" src="#" alt="Product-3">
+        </a>
         <h2 class="product-card__title">Большая корзинка для игрушек</h2>
         <p class="product-card_description">Диаметр 30 см, высота 30 см</p>
         <div class="product-card__price-wrapper">
           <p class="product-card__price">1 500 руб.</p>
-          <img class="product-card__cart" src="#" alt="">
+          <div class="product-card__cart"></div>
         </div>
-      </section>
-      <section class="process-production">
-        <header class="production-header">
-          <img class="production-header__image" src="#" alt="">
-          <h3 class="production-header__title">Процесс производства</h3>
-        </header>
-        <div class="process-production__video"></div>
-        <div class="production-description">
-          <p class="production-description__text">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-          </p>
-          <button class="production-description__btn">Сделать заказ</button>
-        </div>
-      </section>
-    </div>
+      </li>
+    </ul>
+    <section class="process-production">
+      <header class="production-header">
+        <h2 class="production-header__title">Процесс производства</h2>
+      </header>
+      <div class="process-production__video"></div>
+      <div class="production-description">
+        <p class="production-description__text">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <button class="production-description__btn">Сделать заказ</button>
+      </div>
+    </section>
+
   </main>
 
   <footer class="page-footer">
@@ -108,17 +114,17 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-            <img src="#" alt="">
+            <img src="#" alt="instagram-logo">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-            <img src="#" alt="">
+            <img src="#" alt="facebook-logo">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
-            <img src="#" alt="">
+            <img src="#" alt="twitter-logo">
           </a>
         </li>
       </ul>
