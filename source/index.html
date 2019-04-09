@@ -10,7 +10,9 @@
 <body>
 
   <header class="page-header">
-    <img class="main-logo__image" src="#" alt="Logo-image" width="86" height="35">
+    <a class="page-header__logo main-logo">
+      <img class="main-logo__image" src="index.html" alt="Store-logo" width="86" height="35">
+    </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"></button>
       <ul class="main-nav__list site-list">
@@ -66,53 +68,60 @@
     </div>
 
     <section class="featured">
-      <header class="featured__header">
+      <div class="featured__header">
         <h2 class="featured__title">Вязаные корзинки</h2>
         <div class="featured__directory">ТОВАР НЕДЕЛИ</div>
-      </header>
+      </div>
       <div class="featured__description product-description">
         <span class="product-description__item">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
         </span>
-        <span class="product-description__item">Цвет:</span>
-        <span class="product-description__item">&laquo;Тиффани&raquo;/серый</span>
-        <span class="product-description__item">Диаметр:</span>
-        <span class="product-description__item">25 см</span>
-        <span class="product-description__item">Высота:</span>
-        <span class="product-description__item">15 см</span>
-        <span class="product-description__item">Цена: 990 руб.</span>
+        <table class="stats__list">
+          <tr>
+            <td class="stats__value">Цвет:</td>
+            <td class="stats__field">«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td class="stats__value">Диаметр:</td>
+            <td class="stats__field">25 см</td>
+          </tr>
+          <tr>
+            <td class="stats__value">Высота:</td>
+            <td class="stats__field">15 см</td>
+          </tr>
+        </table>
+        <span class="product-description__price">Цена: 990 руб.</span>
         <button class="product-description__btn" type="button">Заказать</button>
       </div>
-      <div class="featured-image">
-      </div>
+      <img class="featured-image" src="#" alt="Товар недели">
     </section>
 
     <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>
-      <section class="about__advantage advantage">
-        <img class="advantage__image" src="#" alt="icon-1">
+      <div class="about__advantage advantage">
+        <img class="advantage__image" src="#" alt="Цветочек">
         <h3 class="advantage__title">Экологически чистые материалы</h3>
-      </section>
-      <section class="about__advantage advantage">
-        <img class="advantage__image" src="#" alt="icon-2">
+      </div>
+      <div class="about__advantage advantage">
+        <img class="advantage__image" src="#" alt="Купюра">
         <h3 class="advantage__title">Скандинавский стиль по российской цене</h3>
-      </section>
-      <section class="about__advantage advantage">
-        <img class="advantage__image" src="#" alt="icon-3">
+      </div>
+      <div class="about__advantage advantage">
+        <img class="advantage__image" src="#" alt="Сердце">
         <h3 class="advantage__title">Увеличивает лайки на фотографиях</h3>
-      </section>
-      <section class="about__advantage advantage">
-        <img class="advantage__image" src="#" alt="icon-4">
+      </div>
+      <div class="about__advantage advantage">
+        <img class="advantage__image" src="#" alt="Клубок">
         <h3 class="advantage__title">Связано вручную с любовью и умилением</h3>
-      </section>
-      <section class="about__advantage advantage">
-        <img class="advantage__image" src="#" alt="icon-5">
+      </div>
+      <div class="about__advantage advantage">
+        <img class="advantage__image" src="#" alt="Ракета">
         <h3 class="advantage__title">Поддержка отечественного производителя</h3>
-      </section>
-      <section class="about__advantage advantage">
-        <img class="advantage__image" src="#" alt="icon-6">
+      </div>
+      <div class="about__advantage advantage">
+        <img class="advantage__image" src="#" alt="Подарок">
         <h3 class="advantage__title">Поставляется в подарочной упаковке</h3>
-      </section>
+      </div>
     </section>
 
     <section class="reviews">
@@ -123,19 +132,22 @@
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
               лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
               фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite class="reviews__author-name">Анастасия Красильникова<span class="reviews__user-name">@misssssiskras</span></cite>
+            <cite class="reviews__author-name">Анастасия Красильникова<span
+                class="reviews__user-name">@misssssiskras</span></cite>
           </blockquote>
           <blockquote class="reviews__item  slider__item">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
               лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
               фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Анастасия Красильникова<span class="reviews__user-name">@misssssiskras</span></cite>
+            <cite class="reviews__author-name">Анастасия Красильникова<span
+                class="reviews__user-name">@misssssiskras</span></cite>
           </blockquote>
           <blockquote class="reviews__item  slider__item">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
               лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
               фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Анастасия Красильникова<span class="reviews__user-name">@misssssiskras</span></cite>
+            <cite class="reviews__author-name">Анастасия Красильникова<span
+                class="reviews__user-name">@misssssiskras</span></cite>
           </blockquote>
           <button class="reviews__prev" type="button">Предыдущий отзыв</button>
           <button class="reviews__next" type="button">Следующий отзыв</button>
@@ -159,7 +171,7 @@
 
       <div class="contacts-map">
       </div>
-      <button>напишите нам</button>
+      <button type="button">напишите нам</button>
     </section>
 
   </main>
@@ -190,7 +202,7 @@
     </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 
