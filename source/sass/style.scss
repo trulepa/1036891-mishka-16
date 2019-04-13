@@ -1,0 +1,31 @@
+// index
+@import "blocks/page-header.scss";
+@import "blocks/main-logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/other-nav.scss";
+@import "blocks/preview.scss";
+@import "blocks/subsection.scss";
+@import "blocks/featured.scss";
+@import "blocks/product-description.scss";
+@import "blocks/about.scss";
+@import "blocks/advantage.scss";
+@import "blocks/reviews.scss";
+@import "blocks/slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/contacts-content.scss";
+@import "blocks/contacts-map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+// catalog
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  outline: 2px solid black;
+  font-family: 'Open Sans', sans-serif;
+}

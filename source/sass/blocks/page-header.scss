@@ -1,0 +1,9 @@
+.page-header {
+  min-height: 79px;
+
+  &__logo {
+    position: absolute;
+    left: calc((100% - 86px) / 2);
+    top: calc((79px - 35px) / 2);
+  }
+}

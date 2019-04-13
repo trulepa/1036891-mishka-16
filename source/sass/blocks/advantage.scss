@@ -1,0 +1,17 @@
+.advantage {
+
+  &__image {
+    display: block;
+    color: #63d1bb;
+  }
+
+  &__title {
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+}

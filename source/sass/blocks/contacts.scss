@@ -1,0 +1,20 @@
+.contacts {
+
+  &__btn {
+    display: block;
+    width: calc(100% - 60px);
+    height: 52px;
+    margin: 39px 30px;
+    padding: 0;
+    text-decoration: none;
+    border: 2px solid #444444;
+    background-color: #ffffff;
+    text-align: center;
+    color: #444444;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 52px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
