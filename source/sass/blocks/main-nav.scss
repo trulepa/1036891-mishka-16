@@ -10,12 +10,12 @@
   margin-right: 30px;
   //margin-bottom: calc((79px - 20px) / 2);
   padding: 0;
-  background: url(../img/icon-menu-open.svg) no-repeat center center;
+  background: url("../img/icon-menu-open.svg") no-repeat center center;
   border: none;
   cursor: pointer;
 
   &--active {
     margin-bottom: calc((79px - 20px) / 2);
-    background: url(../img/icon-menu-close.svg) no-repeat;
+    background: url("../img/icon-menu-close.svg") no-repeat;
   }
 }

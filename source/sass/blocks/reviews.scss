@@ -1,8 +1,6 @@
 .reviews {
   padding: 0 30px;
 
-  &__list {}
-
   &__item {
     margin: 0;
     padding: 0;
@@ -37,7 +35,7 @@
     height: 52px;
     padding: 0;
     border: 1px solid #ececec;
-    background: url(../img/icon-left-arrow.svg) no-repeat;
+    background: url("../img/icon-left-arrow.svg") no-repeat;
     background-position: center center;
     cursor: pointer;
   }
@@ -49,7 +47,7 @@
     height: 52px;
     padding: 0;
     border: 1px solid #ececec;
-    background: url(../img/icon-right-arrow.svg) no-repeat;
+    background: url("../img/icon-right-arrow.svg") no-repeat;
     background-position: center center;
     cursor: pointer;
   }

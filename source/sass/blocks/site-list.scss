@@ -8,14 +8,14 @@
     flex-direction: column;
   }
 
-  &>*:nth-child(3) {
-    background: url(../img/icon-search.svg) no-repeat;
+  & > *:nth-child(3) {
+    background: url("../img/icon-search.svg") no-repeat;
     background-size: 18px;
     background-position: calc(50% - 137px / 2 - 26px) center;
   }
 
-  &>*:nth-child(4) {
-    background: url(../img/icon-cart.svg) no-repeat;
+  & > *:nth-child(4) {
+    background: url("../img/icon-cart.svg") no-repeat;
     background-size: 18px;
     background-position: calc(50% - 181px / 2 - 25px) center;
   }

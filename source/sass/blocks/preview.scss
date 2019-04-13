@@ -1,6 +1,6 @@
 .preview {
   padding-top: 76px;
-  background: url(../img/hero-mobile@1x.jpg) no-repeat center top;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center top;
 
   &__title {
     width: 244px;
@@ -16,13 +16,13 @@
 
   &__interior {
     margin-bottom: 1px;
-    background: url(../img/icon-interior.svg) no-repeat, #63d1bb;
+    background: url("../img/icon-interior.svg") no-repeat, #63d1bb;
     background-position: 87% center;
     background-size: 40px;
   }
 
   &__toy {
-    background: url(../img/icon-toy.svg) no-repeat, #56c3b2;
+    background: url("../img/icon-toy.svg") no-repeat, #56c3b2;
     background-position: 90% center;
     background-size: 60px;
   }
