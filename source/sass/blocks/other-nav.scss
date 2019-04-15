@@ -1,7 +1,13 @@
 .other-nav {
-  display: none;
-
-  &___list {
+  @media (max-width: 767px) {
     display: none;
   }
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.other-nav___list {
+  display: none;
 }

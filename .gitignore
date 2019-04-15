@@ -11,3 +11,4 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
+argument 'graph' unknown revision or path not in the working tree.

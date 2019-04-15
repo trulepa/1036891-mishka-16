@@ -1,9 +1,18 @@
 .page-header {
   min-height: 79px;
 
-  &__logo {
-    position: absolute;
-    left: calc((100% - 86px) / 2);
-    top: calc((79px - 35px) / 2);
+  @media (min-width: 768px) {
+    min-height: 88px;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  left: calc((100% - 86px) / 2);
+  top: calc((79px - 35px) / 2);
+
+  @media (min-width: 768px) {
+    left: 49px;
+    top: 22px;
   }
 }
