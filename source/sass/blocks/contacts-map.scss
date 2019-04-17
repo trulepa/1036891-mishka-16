@@ -1,6 +1,19 @@
 .contacts-map {
-  width: 322px;
+  position: relative;
+  width: auto;
   height: 457px;
-  margin: 0 auto;
-  background: url("../img/icon-map-pin.svg") no-repeat 139px 145px, url("../img/map-mobile@1x.jpg") no-repeat center center;
+  margin: 42px auto 36px;
+
+  @media (min-width: $desktop) {
+    align-self: flex-end;
+    order: 3;
+    width: 525px;
+    margin: 0;
+  }
+}
+
+.contacts-map__pin {
+  position: absolute;
+  top: 20%;
+  left: 51%;
 }

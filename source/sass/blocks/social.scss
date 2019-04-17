@@ -5,7 +5,24 @@
   margin: 0 auto;
   padding: 0;
 
-  &__item {
-    list-style-type: none;
+  @media (min-width: $tablet) {
+    margin: 0 0 0 60px;
+  }
+}
+
+.social__item {
+  list-style-type: none;
+}
+
+.social__item svg:hover {
+  path {
+    fill: #46c1ae;
+  }
+}
+
+.social__item svg:active {
+  path {
+    fill: #46c1ae;
+    opacity: 0.3;
   }
 }

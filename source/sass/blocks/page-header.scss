@@ -1,8 +1,10 @@
 .page-header {
   min-height: 79px;
+  border-bottom: 1px solid #d3d2d2;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     min-height: 88px;
+    padding: 0 50px;
   }
 }
 
@@ -11,8 +13,13 @@
   left: calc((100% - 86px) / 2);
   top: calc((79px - 35px) / 2);
 
-  @media (min-width: 768px) {
-    left: 49px;
+  @media (min-width: $tablet) {
+    left: 50px;
     top: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    left: calc(50% - 149px / 2);
+    top: 9px;
   }
 }

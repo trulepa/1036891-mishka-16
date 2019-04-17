@@ -1,17 +1,18 @@
 .preview {
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     padding-top: 76px;
     background: url("../img/hero-mobile@1x.jpg") no-repeat center top, #f9f9f9;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
+    height: 746px;
     background: url("../img/hero-tablet@1x.jpg") no-repeat center top, #f9f9f9;
   }
 }
 
 .preview__title {
   width: 244px;
-  height: 87px;
+  min-height: 87px;
   margin: 0 auto 120px;
   padding: 0;
   text-align: center;
@@ -19,12 +20,20 @@
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
-}
 
-.preview__interior {
-  background: #63d1bb;
-}
+  @media (min-width: $tablet) {
+    width: 526px;
+    min-height: 95px;
+    margin: 118px auto 374px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 
-.preview__toy {
-  background: #56c3b2;
+  @media (min-width: $desktop) {
+    width: 648px;
+    min-height: 112px;
+    margin: 121px auto 354px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

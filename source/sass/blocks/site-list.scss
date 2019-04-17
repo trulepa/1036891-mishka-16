@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -11,7 +11,7 @@
 }
 
 .site-list--show {
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     display: flex;
     flex-direction: column;
   }
@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile) {
     justify-content: flex-start;
     min-height: 79px;
     margin: 0;
@@ -30,14 +30,14 @@
     box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     justify-content: center;
-    height: 88px;
+    min-height: 88px;
     border-left: 1px solid #d3d2d2;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .site-list__item:nth-child(1),
   .site-list__item:nth-child(2),
   .site-list__item:nth-child(3) span {
@@ -45,7 +45,28 @@
   }
 
   .site-list__item:last-child {
-    padding: 35px 50px 35px 31px;
+    padding-left: 35px;
+  }
+
+  .site-list__item:nth-child(3) {
+    padding: 0 32px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-list__item:nth-child(1),
+  .site-list__item:nth-child(2) {
+    display: flex;
+  }
+
+  .site-list__item:nth-child(1) {
+    padding-right: 35px;
+    border: none;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-right: auto;
+    padding-left: 35px;
   }
 }
 
@@ -60,28 +81,25 @@
   line-height: 24px;
 }
 
-.site-list__link svg {
+.site-list__search,
+.site-list__cart {
   opacity: 0.2;
 }
 
-.site-list__link svg[width="17.6px"] {
-  @media (max-width: 767px) {
+.site-list__search {
+  @media (max-width: $mobile) {
     margin-left: calc(-26px - 17.6px);
     margin-right: 26px;
   }
-
-  @media (min-width: 768px) {
-    margin: 36px 31px 33px 33px;
-  }
 }
 
-.site-list__link svg[width="20.294px"] {
-  @media (max-width: 767px) {
+.site-list__cart {
+  @media (max-width: $mobile) {
     margin-left: calc(-25px - 20.294px);
     margin-right: 25px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin-right: 31px;
   }
 }
@@ -94,7 +112,20 @@
   }
 }
 
+.site-list__link:active svg {
+  opacity: 0.3;
+
+  path {
+    fill: #63d1bb;
+  }
+}
+
 .site-list__link:hover span {
   opacity: 0.6;
+  color: #000000;
+}
+
+.site-list__link:active span {
+  opacity: 0.3;
   color: #000000;
 }

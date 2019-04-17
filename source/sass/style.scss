@@ -1,4 +1,5 @@
 @import "blocks/scafolding.scss";
+@import "blocks/variables.scss";
 // index
 @import "blocks/page-header.scss";
 @import "blocks/main-logo.scss";
@@ -7,7 +8,8 @@
 @import "blocks/page-main.scss";
 @import "blocks/other-nav.scss";
 @import "blocks/preview.scss";
-@import "blocks/subsection.scss";
+@import "blocks/prev-section.scss";
+@import "blocks/button.scss";
 @import "blocks/featured.scss";
 @import "blocks/product-description.scss";
 @import "blocks/about.scss";
