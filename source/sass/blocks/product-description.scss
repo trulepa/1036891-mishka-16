@@ -37,6 +37,7 @@
 
 .product-description__table {
   width: 100%;
+  border-collapse: collapse;
 
   @media (min-width: $tablet) {
     margin-top: 59px;
@@ -44,11 +45,11 @@
 }
 
 .product-description__table tr {
-  border-bottom: 5px solid black;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .product-description__table td {
-  padding: 0;
+  padding: 10px 0 10px 0;
 }
 
 .product-description__key {

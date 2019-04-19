@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -13,12 +13,12 @@
 .advantage__wrapper {
   list-style-type: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 333px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .advantage__wrapper {
     &:nth-child(1) {
       order: 1;
@@ -63,7 +63,7 @@
   font-weight: 700;
   line-height: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: min-content;
     font-size: 20px;
     line-height: 22px;
