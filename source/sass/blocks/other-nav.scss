@@ -1,0 +1,60 @@
+.other-nav {
+  @media (max-width: $mobile) {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    display: block;
+    padding: 16px 52px 0 52px;
+  }
+}
+
+.other-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.other-nav__link {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.other-nav__item-arrivals,
+.other-nav__item-sale {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.other-nav__item-arrivals {
+  @media (min-width: $tablet) {
+    margin-right: 60px;
+  }
+}
+
+.other-nav__item-delivery {
+  @media (min-width: $tablet) {
+    margin: 0 0 0 auto;
+  }
+}
+
+.other-nav__link-delivery {
+  color: #444444;
+  font-weight: 400;
+}

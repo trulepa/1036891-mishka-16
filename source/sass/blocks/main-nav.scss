@@ -1,0 +1,30 @@
+.main-nav {
+  @media (max-width: $mobile) {
+    padding-top: calc((79px - 20px) / 2);
+  }
+}
+
+.main-nav__toggle {
+  @media (max-width: $mobile) {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: 30px;
+    padding: 0;
+    background: url("../img/icon-menu-open.svg") no-repeat center center;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.main-nav__toggle--active {
+  @media (max-width: $mobile) {
+    margin-bottom: calc((79px - 20px) / 2);
+    background: url("../img/icon-menu-close.svg") no-repeat;
+  }
+}
