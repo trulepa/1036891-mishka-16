@@ -1,5 +1,46 @@
 .production-video {
-  width: 250px;
+  position: relative;
+  width: 260px;
   height: 150px;
+  margin: 0 auto;
   background: url("../img/video-mobile@1x.jpg") no-repeat center center;
+}
+
+.production-video__svg {
+  position: absolute;
+  top: calc((100% - 76.891px) / 2);
+  left: calc((100% - 100.678px) / 2);
+  height: 76.891px;
+  width: 100.678px;
+
+  &:hover {
+    transform: scale(1.2, 1.2);
+  }
+
+  &:active {
+    opacity: 0.3;
+    transform: scale(0.8, 0.8);
+  }
+}
+
+@media (min-width: $tablet) {
+  .production-video {
+    width: 668px;
+    height: 455px;
+
+    .production-video {
+      order: 1;
+    }
+
+    background: url("../img/video-tablet@1x.jpg") no-repeat center center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .production-video {
+    width: 682px;
+    height: 455px;
+    margin: 0;
+    background: url("../img/video-desktop@1x.jpg") no-repeat center center;
+  }
 }

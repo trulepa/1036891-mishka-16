@@ -14,6 +14,10 @@
 
 .production-header__title {
   margin: 0;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 @media (max-width: $mobile) {
@@ -23,5 +27,32 @@
 
   .production-header__svg {
     margin-right: 25px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .production-header {
+    order: 2;
+    padding: 39px 0 23px 42px;
+  }
+
+  .production-header__svg {
+    margin-right: 33px;
+  }
+
+  .production-header__title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .production-header {
+    position: absolute;
+    top: 47px;
+    right: 168px;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 160px;
+    padding: 0;
   }
 }
