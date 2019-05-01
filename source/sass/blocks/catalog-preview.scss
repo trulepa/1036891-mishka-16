@@ -1,0 +1,48 @@
+.catalog-preview {
+  background: #f1f1f1;
+}
+
+.catalog-preview__title {
+  margin: 0;
+  color: #000000;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+
+@media (max-width: $mobile) {
+  .catalog-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 177px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .catalog-preview {
+    min-height: 238px;
+    text-align: center;
+    background: url("../img/bg-zigzag-fill.svg") no-repeat bottom center, #f1f1f1;
+  }
+
+  .catalog-preview__title {
+    margin-top: 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-preview {
+    min-height: 272px;
+    text-align: center;
+  }
+
+  .catalog-preview__title {
+    margin-top: 65px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

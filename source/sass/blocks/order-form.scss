@@ -1,0 +1,43 @@
+.order-form {
+  padding: 30px;
+}
+
+.order-form__text {
+  margin: 16px 0 30px;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media (min-width: $tablet) {
+  .order-form {
+    position: relative;
+    padding: 0 50px 50px 50px;
+  }
+
+  .order-form__text {
+    position: absolute;
+    bottom: 68px;
+    right: 50px;
+    width: 40%;
+    margin: 0;
+    font-size: 17px;
+  }
+
+  .order-form__btn {
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .order-form__text {
+    bottom: 68px;
+    right: 160px;
+    width: 28%;
+  }
+
+  .order-form__btn {
+    margin-left: 175px;
+  }
+}

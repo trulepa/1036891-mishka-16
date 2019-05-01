@@ -1,0 +1,134 @@
+.form-color {
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.form-color__title {
+  width: 15%;
+  margin: 0 0 23px 0;
+  color: #63d1bb;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.form-color__label {
+  display: flex;
+  width: 100%;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  cursor: pointer;
+
+  &:hover .form-color__text::before {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active .form-color__text::before {
+    border: 2px solid #444444;
+    opacity: 0.3;
+  }
+}
+
+.form-color__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .form-color__text::before {
+    background: url("../img/icon-tick.svg") no-repeat center center;
+    background-size: 75%;
+    transition: 0.2s;
+  }
+}
+
+.form-color__text {
+  position: relative;
+  padding: 10px 0 0 60px;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #444444;
+  }
+}
+
+@media (max-width: $mobile) {
+  .form-color__title {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 8px;
+      right: 0;
+      height: 1px;
+      width: calc(100% - 20px - 15%);
+      background-color: #63d1bb;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .form-color {
+    display: flex;
+    margin: 0 -50px 0 -50px;
+    padding: 50px;
+    background-color: #f1f1f1;
+  }
+
+  .form-color__title {
+    padding-top: 19px;
+    width: 25%;
+  }
+
+  .form-color__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+
+  .form-color__label {
+    width: 50%;
+    margin-bottom: 16px;
+    padding-bottom: 20px;
+  }
+
+  .form-color__text {
+    padding: 16px 0 0 80px;
+    font-size: 19px;
+
+    &::before {
+      height: 52px;
+      width: 52px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .form-color__title {
+    width: 17%;
+  }
+
+  .form-color__wrapper {
+    width: 70%;
+  }
+
+  .form-color__label {
+    width: 33%;
+  }
+}

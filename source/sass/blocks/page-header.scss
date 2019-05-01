@@ -12,6 +12,7 @@
   position: absolute;
   left: calc((100% - 86px) / 2);
   top: calc((79px - 35px) / 2);
+  z-index: 2;
 
   @media (min-width: $tablet) {
     left: 50px;

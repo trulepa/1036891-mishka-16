@@ -1,0 +1,42 @@
+.form-main {
+  margin: 0;
+}
+
+.form-main__text-content {
+  margin: 0;
+  color: #444444;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: $mobile) {
+  .form-main__text-wrapper {
+    min-height: 144px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .form-main__text-wrapper {
+    min-height: 180px;
+    padding: 60px 50px 60px 50px;
+  }
+
+  .form-main__text-content {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form-main__text-wrapper {
+    min-height: 180px;
+    padding: 112px 250px 60px 225px;
+  }
+
+  .form-main__text-content {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
