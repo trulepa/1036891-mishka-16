@@ -1,7 +1,7 @@
-
 function init(event) {
   var $toggle = document.getElementById("main-nav__toggle");
   $toggle.addEventListener("click", handleButtonClick);
+}
 
 function handleButtonClick(event) {
   var $show = document.getElementById("site-list");

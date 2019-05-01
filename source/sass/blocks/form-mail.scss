@@ -4,7 +4,7 @@
 }
 
 .form-mail__title {
-  max-width: 60px;
+  width: 25%;
   margin: 0 0 23px 0;
   color: #63d1bb;
   font-size: 17px;
@@ -65,26 +65,46 @@
       top: 8px;
       right: 0;
       height: 1px;
-      width: calc(100% - 60px - 20px);
+      width: calc(100% - 10px - 25%);
       background-color: #63d1bb;
     }
   }
 }
 
 @media (min-width: $tablet) {
-  .form-contact {
+  .form-mail {
     display: flex;
     margin: 0 -50px 0 -50px;
-    padding: 50px;
+    padding: 0 50px 50px 50px;
     background-color: #f1f1f1;
   }
 
-  .form-contact__title {
+  .form-mail__title {
     width: 25%;
-    margin-top: 16px;
+    margin-top: 19px;
   }
 
-  .form-contact__input {
+  .form-mail__input {
+    width: 75%;
     background-color: #f1f1f1;
+  }
+
+  .form-mail__svg {
+    top: 11px;
+    right: 76px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form-mail__title {
+    width: 17%;
+  }
+
+  .form-mail__input {
+    width: 70%;
+  }
+
+  .form-mail__svg {
+    right: 200px;
   }
 }

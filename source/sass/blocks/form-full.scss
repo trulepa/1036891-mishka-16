@@ -71,12 +71,19 @@
 @media (min-width: $tablet) {
   .form-full {
     display: flex;
+    margin: 0;
     padding: 50px 0 50px;
   }
 
   .form-full__title {
     width: 25%;
     margin-top: 16px;
+  }
+
+  .form-full__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
   }
 
   .form-full__label {
@@ -110,6 +117,10 @@
 
 @media (min-width: $desktop) {
   .form-full__title {
-    width: 19%;
+    width: 17%;
+  }
+
+  .form-full__wrapper {
+    width: 70%;
   }
 }
