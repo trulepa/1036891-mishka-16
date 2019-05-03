@@ -44,39 +44,6 @@
   line-height: 30px;
 }
 
-/*
-.modal__size {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.modal__unit {
-  width: 82px;
-  height: 52px;
-  border: 2px solid rgba(68, 68, 68, 0.1);
-  background-color: #ffffff;
-  text-align: center;
-  color: #444444;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 52px;
-  text-transform: uppercase;
-  list-style-type: none;
-
-  &:hover {
-    cursor: pointer;
-    border: 2px solid rgba(68, 68, 68, 0.3);
-  }
-
-  &:active {
-    border: 2px solid #62d1ba;
-  }
-}
-*/
-
 .modal__form {
   width: 100%;
 }
@@ -159,12 +126,6 @@
     margin: 32px 0 26px;
     font-size: 17px;
   }
-
-  /*
-  .modal__unit {
-    width: 112px;
-    height: 52px;
-  }*/
 
   .modal__label {
     width: 112px;

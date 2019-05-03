@@ -2,18 +2,22 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  background: url("../img/bg-zigzag-line.svg") repeat-x bottom center;
 
   @media (max-width: $mobile) {
     padding: 34px 30px 36px 30px;
+    background-size: auto 6px;
   }
 
   @media (min-width: $tablet) {
     padding: 43px 50px 59px 50px;
     flex-wrap: wrap;
+    background-size: auto 17px;
   }
 
   @media (min-width: $desktop) {
     position: relative;
+    background-size: auto 23px;
   }
 }
 
@@ -75,6 +79,23 @@
 }
 
 .featured__image {
+  @media (max-width: $mobile) {
+    width: 260px;
+    height: 315px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 525px;
+    height: 636px;
+  }
+}
+
+.featured__picture {
   @media (max-width: $mobile) {
     width: 260px;
     height: 315px;
