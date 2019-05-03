@@ -15,14 +15,10 @@
 }
 
 .social__item svg:hover {
-  path {
-    fill: #46c1ae;
-  }
+  fill: #46c1ae;
 }
 
 .social__item svg:active {
-  path {
-    fill: #46c1ae;
-    opacity: 0.3;
-  }
+  fill: #46c1ae;
+  opacity: 0.3;
 }
