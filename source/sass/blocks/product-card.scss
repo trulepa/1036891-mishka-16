@@ -59,18 +59,12 @@
 .product-card__cart {
   &:hover .product-card__cart-svg {
     opacity: 1;
-
-    path {
-      fill: #63d1bb;
-    }
+    fill: #63d1bb;
   }
 
   &:active .product-card__cart-svg {
     opacity: 0.3;
-
-    path {
-      fill: #63d1bb;
-    }
+    fill: #63d1bb;
   }
 }
 

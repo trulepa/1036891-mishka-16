@@ -37,10 +37,8 @@
     box-shadow: inset 0 -2px 0 #62d1ba;
 
     & + .form-contact__svg {
-      path {
-        fill: #62d1ba;
-        opacity: 1;
-      }
+      fill: #62d1ba;
+      opacity: 1;
     }
   }
 }
@@ -49,11 +47,8 @@
   position: absolute;
   right: 0;
   top: 50px;
-
-  path {
-    fill: #000000;
-    opacity: 0.2;
-  }
+  fill: #000000;
+  opacity: 0.2;
 }
 
 @media (max-width: $mobile) {
