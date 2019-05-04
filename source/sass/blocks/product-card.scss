@@ -57,6 +57,8 @@
 }
 
 .product-card__cart {
+  cursor: pointer;
+
   &:hover .product-card__cart-svg {
     opacity: 1;
     fill: #63d1bb;

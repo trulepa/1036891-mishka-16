@@ -20,17 +20,12 @@
   @media (max-width: $mobile) {
     display: none;
   }
-}
 
-.page-footer__image {
-  width: 102px;
-  height: 34px;
-
-  &:hover {
+  &[href]:hover {
     fill: #46c1ae;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
     fill: #46c1ae;
   }
