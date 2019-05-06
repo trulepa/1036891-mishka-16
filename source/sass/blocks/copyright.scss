@@ -1,10 +1,6 @@
 .copyright {
   width: 182px;
   margin: 0 auto;
-
-  @media (min-width: $tablet) {
-    margin: 0;
-  }
 }
 
 .copyright__text {
@@ -29,7 +25,13 @@
 }
 
 .copyright svg {
-  height: 34.09px;
   width: 26.943px;
+  height: 34.09px;
   fill: #63d1bb;
+}
+
+@media (min-width: $tablet) {
+  .copyright {
+    margin: 0;
+  }
 }

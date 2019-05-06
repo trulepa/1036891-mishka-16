@@ -1,11 +1,6 @@
 .page-header {
   min-height: 79px;
   border-bottom: 1px solid #d3d2d2;
-
-  @media (min-width: $tablet) {
-    min-height: 88px;
-    padding: 0 50px;
-  }
 }
 
 .page-header__logo {
@@ -13,13 +8,22 @@
   left: calc((100% - 86px) / 2);
   top: calc((79px - 35px) / 2);
   z-index: 2;
+}
 
-  @media (min-width: $tablet) {
+@media (min-width: $tablet) {
+  .page-header {
+    min-height: 88px;
+    padding: 0 50px;
+  }
+
+  .page-header__logo {
     left: 50px;
     top: 22px;
   }
+}
 
-  @media (min-width: $desktop) {
+@media (min-width: $desktop) {
+  .page-header__logo {
     left: calc(50% - 149px / 2);
     top: 9px;
   }

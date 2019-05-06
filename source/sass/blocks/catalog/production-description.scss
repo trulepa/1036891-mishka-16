@@ -22,11 +22,11 @@
 
 @media (max-width: $mobile) {
   .production-description {
-    padding: 34px;
+    padding: 28px 34px 32px 34px;
   }
 
   .production-description__text {
-    margin-bottom: 29px;
+    margin-bottom: 25px;
   }
 }
 
@@ -36,11 +36,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 40px;
+    padding: 28px 40px 42px 40px;
   }
 
   .production-description__text {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     font-size: 15px;
     line-height: 30px;
   }
@@ -49,5 +49,10 @@
 @media (min-width: $desktop) {
   .production-description {
     width: 367px;
+    padding: 40px 57px 61px 80px;
+  }
+
+  .production-description__text {
+    margin-bottom: 35px;
   }
 }

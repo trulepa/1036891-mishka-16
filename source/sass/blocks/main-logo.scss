@@ -1,16 +1,6 @@
 .main-logo__image {
   width: 86px;
   height: 35px;
-
-  @media (min-width: $tablet) {
-    width: 113px;
-    height: 46px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 149px;
-    height: 72px;
-  }
 }
 
 .main-logo[href] {
@@ -20,5 +10,19 @@
 
   &:active .main-logo__image {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .main-logo__image {
+    width: 113px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-logo__image {
+    width: 149px;
+    height: 72px;
   }
 }
