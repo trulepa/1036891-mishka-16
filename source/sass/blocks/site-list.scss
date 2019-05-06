@@ -122,8 +122,13 @@
     justify-content: center;
   }
 
+  .site-list__item-cart {
+    padding-left: 32px;
+  }
+
   .site-list__item-search {
     margin-left: auto;
+    padding: 0 32px;
   }
 
   .site-list__item-search,
@@ -136,14 +141,6 @@
     display: none;
   }
 
-  .site-list__item-cart {
-    padding-left: 32px;
-  }
-
-  .site-list__item-search {
-    padding: 0 32px;
-  }
-
   .site-list__cart-svg {
     @media (min-width: $tablet) {
       margin-right: 31px;
@@ -152,7 +149,6 @@
 }
 
 @media (min-width: $desktop) {
-
   .site-list__item-catalog,
   .site-list__item-order {
     display: flex;
