@@ -113,7 +113,6 @@
   .site-list {
     display: flex;
     flex-direction: row;
-    //justify-content: flex-end;
   }
 
   .site-list__item-catalog,
@@ -124,7 +123,7 @@
   }
 
   .site-list__item-search {
-    margin-left: auto; // обход flex-end
+    margin-left: auto;
   }
 
   .site-list__item-search,
@@ -169,4 +168,3 @@
     padding-left: 35px;
   }
 }
-
