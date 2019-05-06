@@ -19,7 +19,7 @@
 
 @media (max-width: $mobile) {
   .production-header {
-    padding: 29px 0 26px 34px;
+    padding: 24px 0 22px 36px;
   }
 
   .production-header__svg {
@@ -30,7 +30,7 @@
 @media (min-width: $tablet) {
   .production-header {
     order: 2;
-    padding: 39px 0 23px 42px;
+    padding: 33px 0 0 42px;
   }
 
   .production-header__svg {
@@ -45,11 +45,15 @@
 @media (min-width: $desktop) {
   .production-header {
     position: absolute;
-    top: 47px;
-    right: 168px;
+    top: 41px;
+    right: 129px;
     flex-direction: column;
     align-items: flex-start;
     max-width: 160px;
     padding: 0;
+  }
+
+  .production-header__svg {
+    margin: 0 0 22px 0;
   }
 }

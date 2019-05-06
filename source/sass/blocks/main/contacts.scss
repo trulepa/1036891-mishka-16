@@ -1,0 +1,36 @@
+@media (max-width: $mobile) {
+  .contacts__btn {
+    width: calc(100% - 60px);
+    margin: 0 30px 36px 30px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .contacts {
+    padding-top: 27px;
+  }
+
+  .contacts__btn {
+    width: 230px;
+    margin: 0 auto 57px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 73px 50px 103px 50px;
+  }
+
+  .contacts__btn {
+    position: absolute;
+    bottom: 104px;
+    left: 225px;
+    align-self: flex-start;
+    order: 2;
+    margin: 0;
+  }
+}
