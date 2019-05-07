@@ -10,14 +10,14 @@
     margin-left: auto;
     margin-right: 20px;
     padding: 20px;
-    background: url("../img/icon-menu-open.svg") no-repeat center center;
+    background: url("../img/menu-open.svg") no-repeat center center;
     border: none;
     cursor: pointer;
   }
 
   .main-nav__toggle--active {
     margin-bottom: calc((79px - 40px) / 2);
-    background: url("../img/icon-menu-close.svg") no-repeat center center;
+    background: url("../img/menu-close.svg") no-repeat center center;
   }
 }
 

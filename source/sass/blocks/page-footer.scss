@@ -21,15 +21,6 @@
   .page-footer__logo {
     display: none;
   }
-
-  &[href]:hover {
-    fill: #46c1ae;
-  }
-
-  &[href]:active {
-    opacity: 0.3;
-    fill: #46c1ae;
-  }
 }
 
 @media (min-width: $tablet) {
@@ -37,6 +28,17 @@
     align-items: center;
     height: 143px;
     padding: 0 50px;
+  }
+
+  .page-footer__logo {
+    &[href]:hover svg {
+      fill: #46c1ae;
+    }
+
+    &[href]:active svg {
+      opacity: 0.3;
+      fill: #46c1ae;
+    }
   }
 
   .page-footer__line {

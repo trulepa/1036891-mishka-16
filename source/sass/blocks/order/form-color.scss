@@ -43,7 +43,7 @@
   overflow: hidden;
 
   &:checked + .form-color__text::before {
-    background: url("../img/icon-tick.svg") no-repeat center center;
+    background: url("../img/tick.svg") no-repeat center center;
     background-size: 75%;
     transition: 0.2s;
   }

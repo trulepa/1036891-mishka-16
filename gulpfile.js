@@ -17,6 +17,21 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 
+gulp.task("clean", function () {
+  return del("build");
+});
+
+gulp.task("copy", function () {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**",
+    "source/*.ico"
+   ], {
+     base: "source"
+   })
+   .pipe(gulp.dest("build"));
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -81,27 +96,13 @@ gulp.task("sprite", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    .pipe(posthtml(
+    .pipe(posthtml([
       include()
-    ))
+    ]))
     .pipe(gulp.dest("build"))
 });
 
-gulp.task("copy", function () {
-  return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**",
-    "source/*.ico"
-   ], {
-     base: "source"
-   })
-   .pipe(gulp.dest("build"));
-});
 
-gulp.task("clean", function () {
-  return del("build");
-});
 
 gulp.task("build", gulp.series(
   "clean",
