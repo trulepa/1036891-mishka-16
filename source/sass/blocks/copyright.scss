@@ -15,7 +15,8 @@
   display: flex;
   justify-content: space-between;
 
-  &:hover svg {
+  &:hover svg,
+  &:focus svg {
     fill: #46c1ae;
   }
 

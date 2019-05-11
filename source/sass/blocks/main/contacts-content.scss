@@ -29,7 +29,8 @@
   text-decoration: none;
   color: #444444;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #46c1ae;
   }
 
@@ -64,7 +65,7 @@
   .contacts-content__header {
     margin-right: auto;
     padding-bottom: 48px;
-    background: url("../img/icon-flag.svg") no-repeat right 19px;
+    background: url("../img/flag.svg") no-repeat right 19px;
     font-size: 43px;
     line-height: 50px;
   }

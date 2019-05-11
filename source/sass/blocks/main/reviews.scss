@@ -53,7 +53,8 @@
   border: none;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
@@ -63,13 +64,11 @@
 }
 
 .reviews__prev {
-  background: url("../img/icon-left-arrow.svg") no-repeat;
-  background-position: center center;
+  background: url("../img/left-arrow.svg") no-repeat center center;
 }
 
 .reviews__next {
-  background: url("../img/icon-right-arrow.svg") no-repeat;
-  background-position: center center;
+  background: url("../img/right-arrow.svg") no-repeat center center;
 }
 
 .reviews__btn {

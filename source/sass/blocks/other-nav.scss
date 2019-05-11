@@ -12,9 +12,9 @@
   line-height: 24px;
 }
 
-.other-nav__item-arrivals,
-.other-nav__item-sale {
-  &:hover {
+.other-nav__link {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 

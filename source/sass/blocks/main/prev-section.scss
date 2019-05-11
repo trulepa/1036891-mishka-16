@@ -15,7 +15,8 @@
 .prev-section__toy {
   min-height: 103px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     //transition-duration: 0.5s;
     transform: scale(1.09);
   }
@@ -57,7 +58,7 @@
 
   .prev-section__interior,
   .prev-section__toy {
-    padding: 18px 0 0 0;
+    padding: 18px 0 18px 0;
   }
 }
 
@@ -70,7 +71,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -8px;
+      bottom: -12px;
       z-index: 2;
       display: block;
       width: 100%;
@@ -87,13 +88,13 @@
   }
 
   .prev-section__link {
-    padding: 0 33px 0 36px;
+    padding: 25px 33px 28px 36px;
   }
 
   .prev-section__title {
     width: 111px;
     font-size: 20px;
-    line-height: calc(61px / 2);
+    line-height: calc(58px / 2);
   }
 
   .prev-section__svg-interior {

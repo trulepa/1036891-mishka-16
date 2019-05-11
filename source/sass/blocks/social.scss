@@ -14,11 +14,14 @@
   list-style-type: none;
 }
 
-.social__item svg:hover {
-  fill: #46c1ae;
-}
+.social__link {
+  &:hover svg,
+  &:focus svg {
+    fill: #46c1ae;
+  }
 
-.social__item svg:active {
-  fill: #46c1ae;
-  opacity: 0.3;
+  &:active svg {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }

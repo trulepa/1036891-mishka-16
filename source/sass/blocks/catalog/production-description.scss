@@ -1,4 +1,6 @@
 .production-description {
+  border: 1px solid rgba(0, 0, 0, 0);
+  
   &:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #ececec;
@@ -53,6 +55,6 @@
   }
 
   .production-description__text {
-    margin-bottom: 35px;
+    margin-bottom: 46px;
   }
 }

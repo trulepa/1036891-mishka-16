@@ -31,7 +31,8 @@
   }
 
   .page-footer__logo {
-    &[href]:hover svg {
+    &[href]:hover svg,
+    &[href]:focus svg {
       fill: #46c1ae;
     }
 

@@ -27,7 +27,7 @@
 
 @media (min-width: $tablet) {
   .preview {
-    height: 746px;
+    min-height: 746px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center top;
 

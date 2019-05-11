@@ -12,7 +12,8 @@
   text-transform: uppercase;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #444444;
     color: #ffffff;
   }

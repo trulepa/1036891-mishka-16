@@ -20,7 +20,8 @@
   padding-bottom: 10px;
   cursor: pointer;
 
-  &:hover .form-color__text::before {
+  &:hover .form-color__text::before,
+  &:focus .form-color__text::before {
     border: 2px solid #62d1ba;
   }
 
@@ -46,6 +47,10 @@
     background: url("../img/tick.svg") no-repeat center center;
     background-size: 75%;
     transition: 0.2s;
+  }
+
+  &:focus .form-color__text::before {
+    border: 2px solid #62d1ba;
   }
 }
 

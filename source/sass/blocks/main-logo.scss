@@ -4,7 +4,8 @@
 }
 
 .main-logo[href] {
-  &:hover .main-logo__image {
+  &:hover .main-logo__image,
+  &:focus .main-logo__image {
     opacity: 0.6;
   }
 
