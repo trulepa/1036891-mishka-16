@@ -17,8 +17,17 @@
 
   &:hover,
   &:focus {
-    //transition-duration: 0.5s;
+    transition-duration: 1s;
     transform: scale(1.09);
+
+    .prev-section__svg-interior,
+    .prev-section__svg-toy {
+      opacity: 0.7;
+    }
+  }
+
+  &:active .prev-section__link {
+    opacity: 0.3;
   }
 }
 
