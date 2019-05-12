@@ -65,8 +65,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 40px;
     width: 40px;
+    height: 40px;
     border: 2px solid #444444;
     border-radius: 50%;
   }
@@ -93,8 +93,8 @@
       display: block;
       top: 8px;
       right: 0;
-      height: 1px;
       width: calc(100% - 20px - 15%);
+      height: 1px;
       background-color: #63d1bb;
     }
   }

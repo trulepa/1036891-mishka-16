@@ -48,8 +48,8 @@
       display: block;
       top: 8px;
       right: 0;
-      height: 1px;
       width: calc(100% - 20px - 15%);
+      height: 1px;
       background-color: #63d1bb;
     }
   }
@@ -58,7 +58,8 @@
 @media (min-width: $tablet) {
   .form-extra {
     display: flex;
-    padding: 50px 0 53px;
+    flex-wrap:wrap;
+    padding: 50px 0 0;
   }
 
   .form-extra__title {
@@ -68,7 +69,7 @@
 
   .form-extra__textarea {
     width: 75%;
-    margin: 0;
+    margin: 0 0 53px 0;
 
     &::placeholder {
       font-size: 19px;
@@ -78,7 +79,7 @@
 
 @media (min-width: $desktop) {
   .form-extra {
-    padding: 50px 0 49px;
+    padding: 50px 0 0px;
   }
 
   .form-extra__title {
@@ -87,6 +88,6 @@
 
   .form-extra__textarea {
     width: 71%;
-    margin-left: 5px;
+    margin: 0 17% 49px 5px;
   }
 }

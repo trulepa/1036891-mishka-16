@@ -1,10 +1,9 @@
 .copyright {
-  width: 182px;
   margin: 0 auto;
 }
 
 .copyright__text {
-  padding: 6px 0 8px 0;
+  padding: 13px 0 0 6px;
   color: #000000;
   font-size: 19px;
   font-weight: 700;
@@ -26,8 +25,9 @@
 }
 
 .copyright svg {
-  width: 26.943px;
-  height: 34.09px;
+  width: 41px;
+  height: 41px;
+  margin: 0 0 0 16px;
   fill: #63d1bb;
 }
 
@@ -37,13 +37,17 @@
   }
 
   .copyright__text {
-    padding: 9px 0 7px;
+    padding: 12px 0 0 0;
+  }
+
+  .copyright svg {
+    margin: 0 -7px 0 17px;
   }
 }
 
 @media (min-width: $desktop) {
   .copyright__text {
-    padding: 8px 0 7px;
+    padding: 12px 0 0;
     margin-left: -3px;
   }
 }

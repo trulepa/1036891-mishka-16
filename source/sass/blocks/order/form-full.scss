@@ -61,8 +61,8 @@
       display: block;
       top: 8px;
       right: 0;
-      height: 1px;
       width: calc(100% - 20px - 15%);
+      height: 1px;
       background-color: #63d1bb;
     }
   }
@@ -131,8 +131,8 @@
   }
 
   .form-full__input {
-    margin: 0;
     width: 81%;
+    margin: 0;
   }
 
   .form-full__text-name {
@@ -140,7 +140,7 @@
   }
 
   .form-full__input-name {
-    margin: 0;
     width: 89%;
+    margin: 0;
   }
 }
