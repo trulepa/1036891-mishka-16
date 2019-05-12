@@ -58,7 +58,7 @@
 @media (min-width: $tablet) {
   .form-extra {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     padding: 50px 0 0;
   }
 
@@ -78,10 +78,6 @@
 }
 
 @media (min-width: $desktop) {
-  .form-extra {
-    padding: 50px 0 0px;
-  }
-
   .form-extra__title {
     width: 11%;
   }

@@ -10,9 +10,7 @@
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
-}
 
-.other-nav__link {
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -23,12 +21,10 @@
   }
 }
 
-
 .other-nav__link-delivery {
   color: #444444;
   font-weight: 400;
 }
-
 
 @media (max-width: $mobile) {
   .other-nav {
