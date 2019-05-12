@@ -5,7 +5,7 @@
 
 .form-color__title {
   width: 15%;
-  margin: 0 0 23px 0;
+  margin: -1px 0 25px -1px;
   color: #63d1bb;
   font-size: 17px;
   font-weight: 700;
@@ -16,8 +16,8 @@
 .form-color__label {
   display: flex;
   width: 100%;
-  margin-bottom: 12px;
-  padding-bottom: 10px;
+  margin-bottom: 22px;
+  padding-bottom: 11px;
   cursor: pointer;
 
   &:hover .form-color__text::before {
@@ -55,7 +55,7 @@
 
 .form-color__text {
   position: relative;
-  padding: 10px 0 0 60px;
+  padding: 10px 0 0 62px;
   color: #000000;
   font-size: 17px;
   font-weight: 700;
@@ -91,7 +91,7 @@
   .form-color {
     display: flex;
     margin: 0 -50px 0 -50px;
-    padding: 50px;
+    padding: 50px 50px 27px 50px;
     background-color: #f1f1f1;
   }
 
@@ -103,18 +103,20 @@
   .form-color__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 75%;
   }
 
   .form-color__label {
-    width: 50%;
-    margin-bottom: 16px;
-    padding-bottom: 20px;
+    width: 48%;
+    margin: 0;
+    margin-bottom: 13px;
   }
 
   .form-color__text {
-    padding: 16px 0 0 80px;
+    padding: 16px 0 18px 80px;
     font-size: 19px;
+    overflow-x: auto;
 
     &::before {
       height: 52px;
@@ -124,15 +126,21 @@
 }
 
 @media (min-width: $desktop) {
+  .form-color {
+    margin: 0 -50px 0 -111px;
+    padding: 50px 50px 27px 111px;
+  }
+
   .form-color__title {
-    width: 17%;
+    width: 11%;
   }
 
   .form-color__wrapper {
-    width: 70%;
+    width: 79%;
+    padding-left: 6px;
   }
 
   .form-color__label {
-    width: 33%;
+    width: 32%;
   }
 }

@@ -5,7 +5,7 @@
 
 .form-full__title {
   width: 15%;
-  margin: 0 0 23px 0;
+  margin: -2px 0 29px -1px;
   color: #63d1bb;
   font-size: 17px;
   font-weight: 700;
@@ -72,7 +72,7 @@
   .form-full {
     display: flex;
     margin: 0;
-    padding: 50px 0 50px;
+    padding: 50px 0 28px;
   }
 
   .form-full__title {
@@ -102,8 +102,9 @@
   }
 
   .form-full__input {
-    width: 80%;
-    padding-left: 18px;
+    width: 75%;
+    padding-left: 17px;
+    margin-left: 26px;
 
     &::placeholder {
       font-size: 19px;
@@ -117,10 +118,29 @@
 
 @media (min-width: $desktop) {
   .form-full__title {
-    width: 17%;
+    width: 11%;
   }
 
   .form-full__wrapper {
-    width: 70%;
+    width: 72%;
+    padding-left: 8px;
+  }
+
+  .form-full__text {
+    width: 18%;
+  }
+
+  .form-full__input {
+    margin: 0;
+    width: 81%;
+  }
+
+  .form-full__text-name {
+    width: 10%;
+  }
+
+  .form-full__input-name {
+    margin: 0;
+    width: 89%;
   }
 }

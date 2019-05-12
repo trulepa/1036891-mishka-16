@@ -1,6 +1,6 @@
 .form-mail {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 }
 
 .form-mail__title {
@@ -15,7 +15,7 @@
 
 .form-mail__input {
   width: 100%;
-  height: 52px;
+  height: 56px;
   border: none;
   box-shadow: inset 0 -2px 0 #000000;
   color: #444444;
@@ -45,8 +45,8 @@
 
 .form-mail__svg {
   position: absolute;
-  right: 0;
-  top: 50px;
+  right: 4px;
+  top: 35px;
   fill: #000000;
   opacity: 0.2;
 }
@@ -60,7 +60,7 @@
       top: 8px;
       right: 0;
       height: 1px;
-      width: calc(100% - 10px - 25%);
+      width: calc(100% - 10px - 28%);
       background-color: #63d1bb;
     }
   }
@@ -70,7 +70,7 @@
   .form-mail {
     display: flex;
     margin: 0 -50px 0 -50px;
-    padding: 0 50px 50px 50px;
+    padding: 0 50px 45px 50px;
     background-color: #f1f1f1;
   }
 
@@ -81,6 +81,7 @@
 
   .form-mail__input {
     width: 75%;
+    padding-left: 20px;
     background-color: #f1f1f1;
   }
 
@@ -91,15 +92,21 @@
 }
 
 @media (min-width: $desktop) {
+  .form-mail {
+    margin: 0 -50px 0 -111px;
+    padding: 0 50px 44px 111px;
+  }
+
   .form-mail__title {
-    width: 17%;
+    width: 11%;
   }
 
   .form-mail__input {
-    width: 70%;
+    width: 71%;
+    margin-top: -4px;
   }
 
   .form-mail__svg {
-    right: 200px;
+    right: 230px;
   }
 }

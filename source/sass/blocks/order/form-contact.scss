@@ -1,6 +1,7 @@
 .form-contact {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
+  margin-top: -4px;
 }
 
 .form-contact__title {
@@ -16,6 +17,7 @@
 .form-contact__input {
   width: 100%;
   height: 52px;
+  margin-top: 4px;
   border: none;
   box-shadow: inset 0 -2px 0 #000000;
   color: #444444;
@@ -45,8 +47,8 @@
 
 .form-contact__svg {
   position: absolute;
-  right: 0;
-  top: 50px;
+  right: 8px;
+  top: 35px;
   fill: #000000;
   opacity: 0.2;
 }
@@ -60,7 +62,7 @@
       top: 8px;
       right: 0;
       height: 1px;
-      width: calc(100% - 20px - 10%);
+      width: calc(100% - 20px - 16%);
       background-color: #63d1bb;
     }
   }
@@ -81,6 +83,7 @@
 
   .form-contact__input {
     width: 75%;
+    padding-left: 20px;
     background-color: #f1f1f1;
   }
 
@@ -91,15 +94,21 @@
 }
 
 @media (min-width: $desktop) {
+  .form-contact {
+    margin: 0 -50px 0 -111px;
+    padding: 50px 50px 20px 111px;
+  }
+
   .form-contact__title {
-    width: 17%;
+    width: 11%;
   }
 
   .form-contact__input {
-    width: 70%;
+    width: 71%;
+    margin-top: 2px;
   }
 
   .form-contact__svg {
-    right: 200px;
+    right: 234px;
   }
 }
