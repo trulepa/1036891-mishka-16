@@ -129,6 +129,7 @@
 
   .reviews__header {
     order: 1;
+    margin-left: -5px;
     font-size: 43px;
     line-height: 46px;
   }
@@ -139,11 +140,20 @@
 
   .reviews__text {
     font-size: 17px;
-    padding: 23px 0 59px 0;
+    padding: 23px 0 55px 0;
   }
 
   .reviews__item {
     position: relative;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .reviews__user-name {
+    line-height: 32px;
   }
 
   .reviews__arrow-wrapper {
@@ -188,9 +198,14 @@
     padding: 23px 0 40px 0;
   }
 
+  .reviews__author-name {
+    line-height: 24px;
+    font-size: 17px;
+  }
+
   .reviews__arrow-wrapper {
     right: -86px;
-    bottom: 14px;
+    bottom: 16px;
   }
 
   .reviews__btn {

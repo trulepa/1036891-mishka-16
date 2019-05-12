@@ -18,6 +18,10 @@
     align-items: center;
     min-height: 177px;
   }
+
+  .catalog-preview__title {
+    padding-bottom: 6px;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -29,7 +33,7 @@
   }
 
   .catalog-preview__title {
-    margin-top: 56px;
+    margin-top: 59px;
     font-size: 43px;
     line-height: 50px;
   }

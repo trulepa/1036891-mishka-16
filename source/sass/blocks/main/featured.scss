@@ -62,6 +62,7 @@
     align-items: center;
     order: 1;
     width: 100%;
+    margin-left: -4px;
   }
 
   .featured__title {
@@ -71,7 +72,7 @@
 
   .featured__directory {
     width: 100px;
-    padding: 7px 25px 0 0;
+    padding: 7px 19px 0 0;
     text-align: center;
     line-height: 17px;
   }
@@ -108,14 +109,15 @@
 @media (min-width: $desktop) {
   .featured {
     position: relative;
-    padding: 53px 50px 97px 50px;
+    margin: 0 50px;
+    padding: 53px 0 97px 0;
     background-size: auto 23px;
   }
 
   .featured__header {
     position: absolute;
-    left: 96px;
-    top: 123px;
+    left: 45px;
+    top: 122px;
     z-index: 2;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -123,7 +125,7 @@
   }
 
   .featured__title {
-    margin-left: 24px;
+    margin-left: 30px;
     font-size: 53px;
     line-height: 57px;
   }

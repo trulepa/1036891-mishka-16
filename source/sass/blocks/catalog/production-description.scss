@@ -1,6 +1,6 @@
 .production-description {
   border: 1px solid rgba(0, 0, 0, 0);
-  
+
   &:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #ececec;
@@ -24,7 +24,7 @@
 
 @media (max-width: $mobile) {
   .production-description {
-    padding: 28px 34px 32px 34px;
+    padding: 26px 32px 32px;
   }
 
   .production-description__text {
@@ -51,7 +51,7 @@
 @media (min-width: $desktop) {
   .production-description {
     width: 367px;
-    padding: 40px 57px 61px 80px;
+    padding: 40px 57px 61px 77px;
   }
 
   .production-description__text {

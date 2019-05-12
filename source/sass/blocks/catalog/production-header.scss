@@ -19,11 +19,16 @@
 
 @media (max-width: $mobile) {
   .production-header {
-    padding: 24px 0 22px 36px;
+    padding: 18px 0 0 33px;
+    margin-bottom: 24px;
   }
 
   .production-header__svg {
-    margin-right: 25px;
+    margin-right: 29px;
+  }
+
+  .production-header__title {
+    padding-top: 3px;
   }
 }
 
@@ -54,6 +59,6 @@
   }
 
   .production-header__svg {
-    margin: 0 0 22px 0;
+    margin: 0 0 21px 0;
   }
 }

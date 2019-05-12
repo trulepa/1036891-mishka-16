@@ -35,4 +35,15 @@
   .copyright {
     margin: 0;
   }
+
+  .copyright__text {
+    padding: 9px 0 7px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright__text {
+    padding: 8px 0 7px;
+    margin-left: -3px;
+  }
 }
