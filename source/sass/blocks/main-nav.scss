@@ -3,26 +3,34 @@
     padding-top: calc((79px - 40px) / 2);
   }
 
+  .main-nav--nojs {
+    padding-top: 79px;
+  }
+
   .main-nav__toggle {
     display: block;
     width: 20px;
     height: 20px;
     margin-left: auto;
     margin-right: 20px;
+    margin-bottom: calc((79px - 40px) / 2);
     padding: 20px;
-    background: url("../img/menu-open.svg") no-repeat center center;
+    background: url("../img/menu-close.svg") no-repeat center center;
     border: none;
     cursor: pointer;
   }
 
+  .main-nav__toggle--nojs {
+    display: none;
+  }
+
   .main-nav__toggle--active {
-    margin-bottom: calc((79px - 40px) / 2);
-    background: url("../img/menu-close.svg") no-repeat center center;
+    background: url("../img/menu-open.svg") no-repeat center center;
   }
 }
 
 @media (min-width: $tablet) {
-  .main-nav__toggle--active {
+  .main-nav__toggle {
     display: none;
   }
 }

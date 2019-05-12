@@ -11,6 +11,7 @@ function init(event) {
 function modalShow(event) {
   if (event.target.classList.contains("modal-btn") || event.target.parentElement.classList.contains("modal-btn")) {
     $modal.classList.toggle("modal--show");
+    event.preventDefault();
   }
 }
 
