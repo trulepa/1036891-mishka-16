@@ -19,7 +19,7 @@
     background-position: center center;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+          (min-resolution: $retina-dppx) {
       background-image: url("../img/map-mobile@2x.jpg");
       background-size: 322px auto;
     }
@@ -35,7 +35,7 @@
     background-position: center center;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+          (min-resolution: $retina-dppx) {
       background-image: url("../img/map-tablet@2x.jpg");
       background-size: 768px auto;
     }
@@ -54,7 +54,7 @@
     background-position: center center;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+          (min-resolution: $retina-dppx) {
       background-image: url("../img/map-desktop@2x.jpg");
       background-size: 525px auto;
     }
