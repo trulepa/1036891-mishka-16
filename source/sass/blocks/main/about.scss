@@ -1,10 +1,10 @@
 .about {
-  padding: 27px 30px 50px 30px;
+  padding: 27px 30px 48px 30px;
 }
 
 .about__title {
   padding: 0;
-  margin: 0;
+  margin: 0 0 10px 0;
   color: #000000;
   font-size: 25px;
   font-weight: 700;
@@ -13,11 +13,11 @@
 
 @media (min-width: $tablet) {
   .about {
-    padding: 49px 50px 65px 50px;
+    padding: 49px 50px 44px 50px;
   }
 
   .about__title {
-    margin-left: -5px;
+    margin: 0 0 31px -5px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -25,11 +25,11 @@
 
 @media (min-width: $desktop) {
   .about {
-    padding: 57px 50px 67px 50px;
+    padding: 57px 50px 51px 50px;
   }
 
   .about__title {
-    margin-left: 171px;
+    margin: 0 0 32px 171px;
     font-size: 53px;
     line-height: 57px;
   }
