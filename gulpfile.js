@@ -16,6 +16,9 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 
 gulp.task("clean", function () {
   return del("build");
@@ -23,14 +26,14 @@ gulp.task("clean", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**",
-    "source/*.ico"
-   ], {
-     base: "source"
-   })
-   .pipe(gulp.dest("build"));
+      "source/fonts/**/*.{woff,woff2}",
+      "source/img/**",
+      "source/js/**",
+      "source/*.ico"
+    ], {
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("css", function () {
@@ -72,8 +75,12 @@ gulp.task("start", gulp.series("css", "server"));
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
+      imagemin.jpegtran({
+        progressive: true
+      }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img"));
@@ -81,7 +88,9 @@ gulp.task("images", function () {
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
+    .pipe(webp({
+      quality: 90
+    }))
     .pipe(gulp.dest("source/img"));
 });
 
@@ -100,6 +109,22 @@ gulp.task("html", function () {
       include()
     ]))
     .pipe(gulp.dest("build"))
+});
+
+gulp.task("minify", function () {
+  return gulp.src("build/*.html")
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("compress", function () {
+  return pipeline(
+    gulp.src("build/*.js"),
+    uglify(),
+    gulp.dest("build")
+  );
 });
 
 gulp.task("build", gulp.series(
