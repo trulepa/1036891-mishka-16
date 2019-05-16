@@ -1,8 +1,9 @@
-.form-main {
-  margin: 0;
+.slogan--wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
-.form-main__text-content {
+.slogan__text {
   margin: 0;
   color: #444444;
   font-size: 13px;
@@ -11,31 +12,33 @@
 }
 
 @media (max-width: $mobile) {
-  .form-main__text-wrapper {
+  .slogan {
     min-height: 144px;
     padding: 21px 30px 0 30px;
   }
 }
 
 @media (min-width: $tablet) {
-  .form-main__text-wrapper {
+  .slogan {
     min-height: 170px;
     padding: 60px 50px 0 50px;
   }
 
-  .form-main__text-content {
+  .slogan__text {
     font-size: 17px;
     line-height: 30px;
   }
 }
 
 @media (min-width: $desktop) {
-  .form-main__text-wrapper {
+  .slogan {
     min-height: 180px;
-    padding: 103px 250px 0 225px;
+
+    padding: 103px 0 0 225px;
   }
 
-  .form-main__text-content {
+  .slogan__text {
+    width: 672px;
     font-size: 17px;
     line-height: 30px;
   }

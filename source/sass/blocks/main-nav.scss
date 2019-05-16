@@ -1,3 +1,8 @@
+.main-nav--wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
 @media (max-width: $mobile) {
   .main-nav {
     padding-top: calc((79px - 40px) / 2);
@@ -32,5 +37,11 @@
 @media (min-width: $tablet) {
   .main-nav__toggle {
     display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav {
+    padding: 0 50px;
   }
 }

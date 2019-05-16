@@ -3,18 +3,23 @@
   background-color: #ffffff;
 
   @media (max-width: $mobile) {
-    margin: 0 30px 58px 30px;
+    padding: 0 30px 58px 30px;
   }
 
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
-    margin: 0 50px 66px 50px;
+    padding: 0 50px 66px 50px;
   }
 
   @media (min-width: $desktop) {
     position: relative;
     flex-direction: row;
-    margin: 57px 50px 102px 50px;
+    padding: 57px 50px 102px 50px;
   }
+}
+
+.process-production--wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
 }

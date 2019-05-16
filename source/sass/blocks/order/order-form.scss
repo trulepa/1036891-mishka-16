@@ -1,5 +1,5 @@
 .order-form {
-  padding: 0 30px 55px;
+  //padding: 0 30px 55px;
 }
 
 .order-form__text {
@@ -13,7 +13,7 @@
 @media (min-width: $tablet) {
   .order-form {
     position: relative;
-    padding: 6px 50px 50px 50px;
+    //padding: 6px 50px 50px 50px;
   }
 
   .order-form__text {
@@ -32,7 +32,7 @@
 
 @media (min-width: $desktop) {
   .order-form {
-    padding: 40px 50px 50px 111px;
+    padding: 40px 0 50px 0;
   }
 
   .order-form__text {

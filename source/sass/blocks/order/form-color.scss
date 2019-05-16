@@ -1,6 +1,11 @@
-.form-color {
+.form-color__container {
   position: relative;
   margin-bottom: 34px;
+}
+
+.form-color__container--wrapper {
+  max-width: 922px;
+  margin: 0 auto;
 }
 
 .form-color__title {
@@ -89,10 +94,13 @@
 
 @media (min-width: $tablet) {
   .form-color {
-    display: flex;
-    margin: 0 -50px 0 -50px;
-    padding: 50px 50px 27px 50px;
     background-color: #f1f1f1;
+  }
+
+  .form-color__container {
+    display: flex;
+    padding: 50px 0 27px 0;
+
   }
 
   .form-color__title {
@@ -126,18 +134,13 @@
 }
 
 @media (min-width: $desktop) {
-  .form-color {
-    margin: 0 -50px 0 -111px;
-    padding: 50px 50px 27px 111px;
-  }
-
   .form-color__title {
     width: 11%;
   }
 
   .form-color__wrapper {
-    width: 79%;
-    padding-left: 6px;
+    width: 85%;
+    padding-left: 10px;
   }
 
   .form-color__label {

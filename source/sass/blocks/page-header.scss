@@ -23,6 +23,10 @@
 }
 
 @media (min-width: $desktop) {
+  .page-header {
+    padding: 0;
+  }
+
   .page-header__logo {
     left: calc(50% - 149px / 2);
     top: 9px;

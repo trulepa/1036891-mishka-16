@@ -2,6 +2,11 @@
   padding: 0 30px 0 30px;
 }
 
+.reviews--wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
 .reviews__header {
   margin: 0;
   padding: 0;
@@ -174,8 +179,8 @@
 
 @media (min-width: $desktop) {
   .reviews {
-    padding: 70px 50px 0 175px;
-    margin-left: 50px;
+    padding: 70px 50px 0 225px;
+    background-position: 50px top;
 
     &::after {
       content: "";

@@ -163,7 +163,7 @@
     margin: 0;
 
     &:nth-child(n+4) {
-      margin-top: 50px; //При переполнении
+      margin-top: 50px;
     }
   }
 
@@ -188,7 +188,7 @@
   .product-card__description {
     width: 100%;
     height: 100%;
-    padding: 31px 32px 25px 24px;
+    padding: 31px 32px 25px 26px;
   }
 
   .product-card__price-wrapper {

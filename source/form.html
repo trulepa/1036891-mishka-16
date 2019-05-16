@@ -13,6 +13,7 @@
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
+
   </script>
   <script src="js/picturefill.js" async=""></script>
 </head>
@@ -30,7 +31,7 @@
         <img class="main-logo__image" src="img/logo-mobile.svg" alt="Store-logo" width="86" height="35">
       </picture>
     </a>
-    <nav class="main-nav main-nav--nojs">
+    <nav class="main-nav main-nav--wrapper main-nav--nojs">
       <button class="main-nav__toggle main-nav__toggle--nojs" id="main-nav__toggle" type="button"></button>
       <ul class="site-list site-list--show" id="site-list">
         <li class="site-list__item-catalog">
@@ -59,10 +60,10 @@
     </nav>
   </header>
 
-  <main class="form-main">
+  <main>
 
     <div class="catalog-preview">
-      <nav class="other-nav">
+      <nav class="other-nav other-nav--wrapper">
         <ul class="other-nav__list">
           <li class="other-nav__item-arrivals">
             <a class="other-nav__link" href="#">Новые поступления</a>
@@ -78,8 +79,8 @@
       <h1 class="catalog-preview__title">Вязание на заказ</h1>
     </div>
 
-    <div class="form-main__text-wrapper">
-      <p class="form-main__text-content">
+    <div class="slogan slogan--wrapper">
+      <p class="slogan__text">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
         уточнить детали.
       </p>
@@ -87,7 +88,7 @@
 
     <form class="order-form" action="https://echo.htmlacademy.ru" method="POST">
 
-      <div class="form-type">
+      <div class="form-type form-type--wrapper">
         <h2 class="form-type__title">тип</h2>
         <div class="form-type__wrapper">
           <label class="form-type__label">
@@ -102,6 +103,7 @@
       </div>
 
       <div class="form-color">
+        <div class="form-color__container form-color__container--wrapper">
         <h2 class="form-color__title">цвет</h2>
         <div class="form-color__wrapper">
           <label class="form-color__label">
@@ -130,8 +132,9 @@
           </label>
         </div>
       </div>
+      </div>
 
-      <div class="form-full">
+      <div class="form-full form-full--wrapper">
         <h2 class="form-full__title">фио</h2>
         <div class="form-full__wrapper">
           <label class="form-full__label">
@@ -150,9 +153,11 @@
         </div>
       </div>
 
-      <div class="form-contact">
+      <div class="adress">
+      <div class="form-contact form-contact--wrapper">
         <label class="form-contact__title" for="tel">тел</label>
-        <input class="form-contact__input" id="tel" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required="">
+        <input class="form-contact__input" id="tel" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+          required="">
         <svg class="form-contact__svg" width="24.829" height="24.333" role="img" aria-labelledby="heading"
           focusable="false">
           <title>Поле ввода номера телефона</title>
@@ -160,7 +165,7 @@
         </svg>
       </div>
 
-      <div class="form-mail">
+      <div class="form-mail form-mail--wrapper">
         <label class="form-mail__title" for="email">e-mail</label>
         <input class="form-mail__input" id="email" type="email" name="mail" placeholder="Ваш Email*" required="">
         <svg class="form-mail__svg" width="32" height="32" role="img" aria-labelledby="heading" focusable="false">
@@ -168,6 +173,7 @@
           <use xlink:href="#icon-mail"></use>
         </svg>
       </div>
+    </div>
 
       <div class="form-extra">
         <label class="form-extra__title" for="extra">доп</label>
@@ -181,45 +187,47 @@
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo" href="index.html">
-      <svg class="page-footer__image" width="101.615" height="34.056" aria-label="Переход на главную страницу">
-        <use xlink:href="#icon-logo-footer"></use>
-      </svg>
-    </a>
-    <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
-          aria-label="Переход в instagram HTML Academy">
-          <svg width="21.769" height="21.334">
-            <use xlink:href="#icon-insta"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-          aria-label="Переход в facebook HTML Academy">
-          <svg width="14.962" height="27.718">
-            <use xlink:href="#icon-fb"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"
-          aria-label="Переход в twitter HTML Academy">
-          <svg width="23.494" height="20.168">
-            <use xlink:href="#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <div class="page-footer__line"></div>
-    <div class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="copyright__text">Разработано:</span>
-        <svg width="41" height="41" aria-label="Переход на сайт в HTML Academy">
-          <use xlink:href="#icon-htmlacademy"></use>
+    <div class="page-footer__container page-footer__container--wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <svg class="page-footer__image" width="101.615" height="34.056" aria-label="Переход на главную страницу">
+          <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
+            aria-label="Переход в instagram HTML Academy">
+            <svg width="21.769" height="21.334">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+            aria-label="Переход в facebook HTML Academy">
+            <svg width="14.962" height="27.718">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"
+            aria-label="Переход в twitter HTML Academy">
+            <svg width="23.494" height="20.168">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__line"></div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано:</span>
+          <svg width="41" height="41" aria-label="Переход на сайт в HTML Academy">
+            <use xlink:href="#icon-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 

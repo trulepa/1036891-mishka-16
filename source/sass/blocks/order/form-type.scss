@@ -3,6 +3,11 @@
   margin-bottom: 34px;
 }
 
+.form-type--wrapper {
+  max-width: 922px;
+  margin: 0 auto;
+}
+
 .form-type__title {
   width: 15%;
   margin: -3px 0 25px -1px;
@@ -144,6 +149,6 @@
   }
 
   .form-type__wrapper {
-    padding-left: 6px;
+    padding-left: 10px;
   }
 }
