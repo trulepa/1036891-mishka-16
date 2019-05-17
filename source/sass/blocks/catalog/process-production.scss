@@ -1,25 +1,31 @@
 .process-production {
   border: 1px solid #ececec;
   background-color: #ffffff;
+}
 
-  @media (max-width: $mobile) {
-    padding: 0 30px 58px 30px;
+@media (max-width: $mobile) {
+  .process-production--wrapper {
+    margin: 0 30px 58px 30px;
   }
+}
 
-  @media (min-width: $tablet) {
+@media (min-width: $tablet) {
+  .process-production {
     display: flex;
     flex-direction: column;
     padding: 0 50px 66px 50px;
   }
+}
 
-  @media (min-width: $desktop) {
+@media (min-width: $desktop) {
+  .process-production {
     position: relative;
     flex-direction: row;
     padding: 57px 50px 102px 50px;
   }
-}
 
-.process-production--wrapper {
-  max-width: 1150px;
-  margin: 0 auto;
+  .process-production--wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }

@@ -1,16 +1,10 @@
 .form-type {
   position: relative;
-  margin-bottom: 34px;
-}
-
-.form-type--wrapper {
-  max-width: 922px;
-  margin: 0 auto;
 }
 
 .form-type__title {
   width: 15%;
-  margin: -3px 0 25px -1px;
+  margin: 0;
   color: #63d1bb;
   font-size: 17px;
   font-weight: 700;
@@ -21,8 +15,6 @@
 .form-type__label {
   display: flex;
   width: 100%;
-  margin-bottom: 4px;
-  padding-bottom: 10px;
   cursor: pointer;
 
   &:hover .form-type__text::before,
@@ -59,7 +51,6 @@
 
 .form-type__text {
   position: relative;
-  padding: 10px 0 0 62px;
   color: #000000;
   font-size: 17px;
   font-weight: 700;
@@ -91,7 +82,13 @@
 }
 
 @media (max-width: $mobile) {
+  .form-type--wrapper {
+    margin: 0 30px;
+  }
+
   .form-type__title {
+    margin: 0 0 25px 0;
+
     &::after {
       content: "";
       position: absolute;
@@ -103,16 +100,28 @@
       background-color: #63d1bb;
     }
   }
+
+  .form-type__label {
+    margin-bottom: 4px;
+    padding-bottom: 10px;
+  }
+
+  .form-type__text {
+    padding: 10px 0 0 62px;
+  }
 }
 
 @media (min-width: $tablet) {
   .form-type {
     display: flex;
-    margin-bottom: 26px;
+  }
+
+  .form-type--wrapper {
+    margin: 6px 51px 26px 51px;
   }
 
   .form-type__title {
-    padding-top: 19px;
+    padding-top: 18px;
     width: 25%;
   }
 
@@ -144,11 +153,16 @@
 }
 
 @media (min-width: $desktop) {
+  .form-type--wrapper {
+    max-width: 928px;
+    margin: 0 auto 25px;
+  }
+
   .form-type__title {
     width: 11%;
   }
 
   .form-type__wrapper {
-    padding-left: 10px;
+    padding-left: 12px;
   }
 }

@@ -1,24 +1,38 @@
-.order-form {
-  //padding: 0 30px 55px;
-}
-
 .order-form__text {
-  margin: 13px 0 30px;
   color: #444444;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
 }
 
+@media (max-width: $mobile) {
+  .order-form {
+    margin-top: -3px;
+    padding-bottom: 55px;
+  }
+
+  .order-form__text {
+    margin: 12px 30px 31px;
+  }
+
+  .order-form__btn {
+    width: calc(100% - 60px);
+    margin: 0 30px;
+  }
+}
+
 @media (min-width: $tablet) {
   .order-form {
     position: relative;
-    //padding: 6px 50px 50px 50px;
+  }
+
+  .order-form__adress {
+    background-color: #f1f1f1;
   }
 
   .order-form__text {
     position: absolute;
-    bottom: 70px;
+    bottom: 71px;
     right: 44px;
     width: 40%;
     margin: 0;
@@ -26,22 +40,26 @@
   }
 
   .order-form__btn {
+    position: absolute;
+    bottom: 51px;
+    left: 50px;
     width: 230px;
   }
 }
 
 @media (min-width: $desktop) {
   .order-form {
-    padding: 40px 0 50px 0;
+    padding: 40px 0 98px 0;
   }
 
   .order-form__text {
+    right: 231px;
     bottom: 69px;
-    right: 203px;
     width: 28%;
   }
 
   .order-form__btn {
-    margin-left: 114px;
+    bottom: 50px;
+    left: calc((100vw - 1150px) / 2 + 225px);
   }
 }

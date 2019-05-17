@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Form</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensans.woff" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -104,34 +104,34 @@
 
       <div class="form-color">
         <div class="form-color__container form-color__container--wrapper">
-        <h2 class="form-color__title">цвет</h2>
-        <div class="form-color__wrapper">
-          <label class="form-color__label">
-            <input class="form-color__input" type="checkbox" name="color" value="white">
-            <span class="form-color__text">Белый</span>
-          </label>
-          <label class="form-color__label">
-            <input class="form-color__input" type="checkbox" name="color" value="gray">
-            <span class="form-color__text">Серый</span>
-          </label>
-          <label class="form-color__label">
-            <input class="form-color__input" type="checkbox" name="color" value="tiffany">
-            <span class="form-color__text">«Тиффани»</span>
-          </label>
-          <label class="form-color__label">
-            <input class="form-color__input" type="checkbox" name="color" value="black">
-            <span class="form-color__text">Черный</span>
-          </label>
-          <label class="form-color__label">
-            <input class="form-color__input" type="checkbox" name="color" value="pink">
-            <span class="form-color__text">Розовый</span>
-          </label>
-          <label class="form-color__label">
-            <input class="form-color__input" type="checkbox" name="color" value="orange">
-            <span class="form-color__text">Оранжевый</span>
-          </label>
+          <h2 class="form-color__title">цвет</h2>
+          <div class="form-color__wrapper">
+            <label class="form-color__label">
+              <input class="form-color__input" type="checkbox" name="color" value="white">
+              <span class="form-color__text">Белый</span>
+            </label>
+            <label class="form-color__label">
+              <input class="form-color__input" type="checkbox" name="color" value="gray">
+              <span class="form-color__text">Серый</span>
+            </label>
+            <label class="form-color__label">
+              <input class="form-color__input" type="checkbox" name="color" value="tiffany">
+              <span class="form-color__text">«Тиффани»</span>
+            </label>
+            <label class="form-color__label">
+              <input class="form-color__input" type="checkbox" name="color" value="black">
+              <span class="form-color__text">Черный</span>
+            </label>
+            <label class="form-color__label">
+              <input class="form-color__input" type="checkbox" name="color" value="pink">
+              <span class="form-color__text">Розовый</span>
+            </label>
+            <label class="form-color__label">
+              <input class="form-color__input" type="checkbox" name="color" value="orange">
+              <span class="form-color__text">Оранжевый</span>
+            </label>
+          </div>
         </div>
-      </div>
       </div>
 
       <div class="form-full form-full--wrapper">
@@ -153,29 +153,29 @@
         </div>
       </div>
 
-      <div class="adress">
-      <div class="form-contact form-contact--wrapper">
-        <label class="form-contact__title" for="tel">тел</label>
-        <input class="form-contact__input" id="tel" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-          required="">
-        <svg class="form-contact__svg" width="24.829" height="24.333" role="img" aria-labelledby="heading"
-          focusable="false">
-          <title>Поле ввода номера телефона</title>
-          <use xlink:href="#icon-phone"></use>
-        </svg>
+      <div class="order-form__adress">
+        <div class="form-contact form-contact--wrapper">
+          <label class="form-contact__title" for="tel">тел</label>
+          <input class="form-contact__input" id="tel" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+            required="">
+          <svg class="form-contact__svg" width="24.829" height="24.333" role="img" aria-labelledby="heading"
+            focusable="false">
+            <title>Поле ввода номера телефона</title>
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+        </div>
+
+        <div class="form-mail form-mail--wrapper">
+          <label class="form-mail__title" for="email">e-mail</label>
+          <input class="form-mail__input" id="email" type="email" name="mail" placeholder="Ваш Email*" required="">
+          <svg class="form-mail__svg" width="32" height="32" role="img" aria-labelledby="heading" focusable="false">
+            <title>Поле ввода адреса почты</title>
+            <use xlink:href="#icon-mail"></use>
+          </svg>
+        </div>
       </div>
 
-      <div class="form-mail form-mail--wrapper">
-        <label class="form-mail__title" for="email">e-mail</label>
-        <input class="form-mail__input" id="email" type="email" name="mail" placeholder="Ваш Email*" required="">
-        <svg class="form-mail__svg" width="32" height="32" role="img" aria-labelledby="heading" focusable="false">
-          <title>Поле ввода адреса почты</title>
-          <use xlink:href="#icon-mail"></use>
-        </svg>
-      </div>
-    </div>
-
-      <div class="form-extra">
+      <div class="form-extra form-extra--wrapper ">
         <label class="form-extra__title" for="extra">доп</label>
         <textarea class="form-extra__textarea" id="extra" name="extra" cols="40" rows="10"
           placeholder="Опишите все ваши пожелания к заказу"></textarea>

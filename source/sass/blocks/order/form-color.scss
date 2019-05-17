@@ -1,16 +1,9 @@
 .form-color__container {
   position: relative;
-  margin-bottom: 34px;
-}
-
-.form-color__container--wrapper {
-  max-width: 922px;
-  margin: 0 auto;
 }
 
 .form-color__title {
   width: 15%;
-  margin: -1px 0 25px -1px;
   color: #63d1bb;
   font-size: 17px;
   font-weight: 700;
@@ -21,7 +14,6 @@
 .form-color__label {
   display: flex;
   width: 100%;
-  margin-bottom: 22px;
   padding-bottom: 11px;
   cursor: pointer;
 
@@ -60,7 +52,6 @@
 
 .form-color__text {
   position: relative;
-  padding: 10px 0 0 62px;
   color: #000000;
   font-size: 17px;
   font-weight: 700;
@@ -78,7 +69,13 @@
 }
 
 @media (max-width: $mobile) {
+  .form-color__container--wrapper {
+    margin: 35px 30px 0 30px;
+  }
+
   .form-color__title {
+    margin: -1px 0 25px -1px;
+
     &::after {
       content: "";
       position: absolute;
@@ -90,6 +87,14 @@
       background-color: #63d1bb;
     }
   }
+
+  .form-color__label {
+    margin-bottom: 22px;
+  }
+
+  .form-color__text {
+    padding: 10px 0 0 62px;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -100,11 +105,14 @@
   .form-color__container {
     display: flex;
     padding: 50px 0 27px 0;
+  }
 
+  .form-color__container--wrapper {
+    margin: 6px 51px 26px 51px;
   }
 
   .form-color__title {
-    padding-top: 19px;
+    padding-top: 4px;
     width: 25%;
   }
 
@@ -116,7 +124,7 @@
   }
 
   .form-color__label {
-    width: 48%;
+    width: 47%;
     margin: 0;
     margin-bottom: 13px;
   }
@@ -134,13 +142,18 @@
 }
 
 @media (min-width: $desktop) {
+  .form-color__container--wrapper {
+    max-width: 922px;
+    margin: 0 auto;
+  }
+
   .form-color__title {
     width: 11%;
   }
 
   .form-color__wrapper {
     width: 85%;
-    padding-left: 10px;
+    padding-left: 12px;
   }
 
   .form-color__label {
