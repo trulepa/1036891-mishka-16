@@ -91,6 +91,7 @@
 
   .site-list__item-catalog span,
   .site-list__item-order span {
+    z-index: 3;
     font-size: 15px;
     line-height: 24px;
   }

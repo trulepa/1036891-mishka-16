@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.advantage__wrapper {
+.advantage__item {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -35,7 +35,7 @@
     flex-wrap: wrap;
   }
 
-  .advantage__wrapper {
+  .advantage__item {
     width: 333px;
     margin-bottom: 39px;
 
@@ -71,7 +71,7 @@
 }
 
 @media (min-width: $desktop) {
-  .advantage__wrapper {
+  .advantage__item {
     width: 349px;
   }
 }
